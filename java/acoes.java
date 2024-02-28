@@ -1,35 +1,33 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
-
-
 public class acoes{
 	double dividendo;
 	double valor;
-	double lpa; //Lucro por ação
-	double vpa; //Valor patrimonial por ação
-	double valorpre; //Valor das ações 1 ano atras
+	double lpa; //Lucro por aÃ§Ã£o
+	double vpa; //Valor patrimonial por aÃ§Ã£o
+	double valorpre; //Valor das aÃ§Ãµes 1 ano atras
 
 	public static void calcYeild(double dividendo, double valor){
 		double dividendoYeild = dividendo/valor*100;
-		System.out.printf("O dividendo Yeild desta ação é %.2f", dividendoYeild);
+		System.out.printf("O dividendo Yeild desta aÃ§Ã£o Ã© %.2f", dividendoYeild);
 		System.out.println("%");
 	}
 	
 	public static void calcpl(double valor, double lpa){
 		double pla = valor/lpa;
-		System.out.printf("E o P/L (Preço sobre o lucro) é de R$" + "%.2f", pla);
+		System.out.printf("E o P/L (PreÃ§o sobre o lucro) Ã© de R$" + "%.2f", pla);
 	}
 
 	public static void calcpvp(double valor, double vpa){
 		double pvp = valor/vpa;
-		System.out.printf("O P/VP da ação (Preço sobre o valor patrimonial) é R$" + "%.2f", pvp);
+		System.out.printf("O P/VP da aÃ§Ã£o (PreÃ§o sobre o valor patrimonial) Ã© R$" + "%.2f", pvp);
 	}
 
 	public static void calcanos(double valorpre, double valor){
 		double acoespre = 1000/valorpre;
 		double vendaatual = acoespre*valor;
 		System.out.println("");
-		System.out.printf("Fizemos uma análise para você e se você tivesse investido R$1000 a 1 ano, hoje você teria R$" + "%.2f", vendaatual);
+		System.out.printf("Fizemos uma anÃ¡lise para vocÃª e se vocÃª tivesse investido R$1000 a 1 ano, hoje vocÃª teria R$" + "%.2f", vendaatual);
 	}
 	
 	
@@ -40,14 +38,14 @@ public class acoes{
 		boolean ok = true;
 		Scanner ler = new Scanner(System.in);
 		while(ok == true){
-			System.out.println("Olá senhor(a), qual ação nós veremos hoje?");
+			System.out.println("OlÃ¡ senhor(a), qual aÃ§Ã£o nÃ³s veremos hoje?");
 			System.out.println("1 - ENAT3");
 			System.out.println("2 - ITSA4");
 			System.out.println("3 - WEGE3");
 			System.out.println("Digite 1, 2 ou 3");
 			x = ler.nextInt();
 			while(x<1 || x>3){
-				System.out.println("Não entendi senhor(a), tente novamente");
+				System.out.println("NÃ£o entendi senhor(a), tente novamente");
 				System.out.println("Digite 1, 2 ou 3");
 				x = ler.nextInt();
 			}
@@ -62,13 +60,13 @@ public class acoes{
 					System.out.println("");
 					enat3.calcanos(13.85, 25.37);
 					System.out.println("");
-					System.out.println("O que você deseja agora:");
-					System.out.println("1 - Comprar uma ação por R$25,37");
-					System.out.println("2 - Análisar outra ação");
+					System.out.println("O que vocÃª deseja agora:");
+					System.out.println("1 - Comprar uma aÃ§Ã£o por R$25,37");
+					System.out.println("2 - AnÃ¡lisar outra aÃ§Ã£o");
 					System.out.println("Digite 1 ou 2");
 					y = ler.nextInt();
 					while(y<1 || y>2){
-						System.out.println("Não entendi senhor(a), tente novamente");
+						System.out.println("NÃ£o entendi senhor(a), tente novamente");
 						System.out.println("Digite 1 ou 2");
 						y = ler.nextInt();
 					}
@@ -90,13 +88,13 @@ public class acoes{
 					System.out.println("");
 					itsa4.calcanos(7.26, 10.50);
 					System.out.println("");
-					System.out.println("O que você deseja agora:");
-					System.out.println("1 - Comprar uma ação por R$10,50");
-					System.out.println("2 - Análisar outra ação");
+					System.out.println("O que vocÃª deseja agora:");
+					System.out.println("1 - Comprar uma aÃ§Ã£o por R$10,50");
+					System.out.println("2 - AnÃ¡lisar outra aÃ§Ã£o");
 					System.out.println("Digite 1 ou 2");
 					y = ler.nextInt();
 					while(y<1 || y>2){
-						System.out.println("Não entendi senhor(a), tente novamente");
+						System.out.println("NÃ£o entendi senhor(a), tente novamente");
 						System.out.println("Digite 1 ou 2");
 						y = ler.nextInt();
 					}
@@ -118,13 +116,13 @@ public class acoes{
 					System.out.println("");
 					wege3.calcanos(38.28, 36.96);
 					System.out.println("");
-					System.out.println("O que você deseja agora:");
-					System.out.println("1 - Comprar uma ação por R$38,28");
-					System.out.println("2 - Análisar outra ação");
+					System.out.println("O que vocÃª deseja agora:");
+					System.out.println("1 - Comprar uma aÃ§Ã£o por R$38,28");
+					System.out.println("2 - AnÃ¡lisar outra aÃ§Ã£o");
 					System.out.println("Digite 1 ou 2");
 					y = ler.nextInt();
 					while(y<1 || y>2){
-						System.out.println("Não entendi senhor(a), tente novamente");
+						System.out.println("NÃ£o entendi senhor(a), tente novamente");
 						System.out.println("Digite 1 ou 2");
 						y = ler.nextInt();
 					}
@@ -139,7 +137,7 @@ public class acoes{
 				
 			}
 		}
-	System.out.println("Agora você é um investidor! Obrigado pela preferencia e volte sempre :)");
+	System.out.println("Agora vocÃª Ã© um investidor! Obrigado pela preferencia e volte sempre :)");
 	}
 
 }
