@@ -11,3 +11,12 @@ Este mini-projeto é um jogo de adivinhação que utiliza a **classe `Scanner`**
 ### `acoes.java`
 
 Este programa simula uma simples ferramenta de análise de ações, demonstrando conceitos de **Programação Orientada a Objetos (POO)** com a criação da classe `acoes`. Ele utiliza **métodos** para calcular indicadores financeiros, a classe **`Scanner`** para interação com o usuário e **laços de repetição** (`while`) para criar um menu de navegação. A formatação de saída com `printf` também é praticada para exibir os valores monetários corretamente.
+
+### Exercícios de Estrutura de Conta Bancária
+
+Este grupo de exercícios demonstra a evolução do desenvolvimento de um sistema simples de conta bancária, partindo de uma abordagem procedural e migrando para conceitos fundamentais de **Programação Orientada a Objetos (POO)**.
+
+* **`CaixaEletronico.java`**: Versão inicial que utiliza estruturas de controle (`switch`, `while`) para simular o menu e as operações básicas de um caixa eletrônico em um único método `main`.
+* **`CaixaEletronicoPOO.java`**: Introduz o conceito de **classe**, separando a lógica da conta bancária (`saldo`, `depositar`, `sacar`) em seu próprio objeto.
+* **`ContaBancariaConstrutores.java`**: Adiciona o uso de **construtores** para garantir que as novas instâncias de `ContaBancaria` sejam inicializadas com dados essenciais, como número da conta e titular, de forma segura.
+* **`ContaBancariaGettersSetters.java`**: Por fim, implementa o conceito de **Encapsulamento** com o uso de **`getters` e `setters`**, tornando as variáveis privadas (`private`) e controlando o acesso a elas.
