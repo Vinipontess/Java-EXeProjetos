@@ -1,5 +1,5 @@
 <img src="src/ProjetosJava.png"></img>
-# Projetos e Exercícios Java
+# Exercícios e projetos Java
 
 Este repositório foi criado para armazenar projetos e exercícios em Java, servindo como um portfólio de prática e aprendizado contínuo na linguagem.
 
