@@ -24,3 +24,8 @@ Este grupo de exercícios demonstra a evolução do desenvolvimento de um sistem
 ### `Herancas.java`
 
 Este exercício demonstra um dos pilares da **Programação Orientada a Objetos (POO)**: a **Herança**. Ele define uma classe base (`Funcionario`) com atributos e métodos comuns e, em seguida, uma subclasse (`Gerente`) que **estende** (`extends`) `Funcionario`, herdando suas características e adicionando novos atributos e comportamentos específicos. O código destaca o uso da palavra-chave `super()` no construtor da subclasse para chamar o construtor da classe pai, garantindo a inicialização correta dos atributos herdados.
+
+### `Polimorfismo.java`
+
+Aprofundando nos conceitos de **POO**, este código é um exemplo prático de **Polimorfismo**. Ele evolui o exemplo anterior ao transformar `Funcionario` em uma **classe abstrata** (`abstract class`) com um **método abstrato** (`abstract double calcularSalario()`). As subclasses `Gerente` e `Programador` são, então, obrigadas a **sobrescrever** (`@Override`) este método, cada uma com sua própria lógica de cálculo. O polimorfismo é demonstrado no método estático `imprimirSalario`, que aceita um objeto do tipo genérico `Funcionario` e invoca o método `calcularSalario()` correto em tempo de execução, dependendo se o objeto real é um `Gerente` ou um `Programador`.
+
