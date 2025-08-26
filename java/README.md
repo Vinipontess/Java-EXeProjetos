@@ -21,11 +21,11 @@ Este grupo de exercícios demonstra a evolução do desenvolvimento de um sistem
 * **`ContaBancariaConstrutores.java`**: Adiciona o uso de **construtores** para garantir que as novas instâncias de `ContaBancaria` sejam inicializadas com dados essenciais, como número da conta e titular, de forma segura.
 * **`ContaBancariaGettersSetters.java`**: Por fim, implementa o conceito de **Encapsulamento** com o uso de **`getters` e `setters`**, tornando as variáveis privadas (`private`) e controlando o acesso a elas.
 
-### `Herancas.java`
+### Evolução de um Sistema de Funcionários (POO)
 
-Este exercício demonstra um dos pilares da **Programação Orientada a Objetos (POO)**: a **Herança**. Ele define uma classe base (`Funcionario`) com atributos e métodos comuns e, em seguida, uma subclasse (`Gerente`) que **estende** (`extends`) `Funcionario`, herdando suas características e adicionando novos atributos e comportamentos específicos. O código destaca o uso da palavra-chave `super()` no construtor da subclasse para chamar o construtor da classe pai, garantindo a inicialização correta dos atributos herdados.
+Este conjunto de exercícios demonstra a aplicação progressiva de conceitos-chave da **Programação Orientada a Objetos (POO)**. Partindo da **Herança** para criar uma hierarquia de classes, o código evolui para introduzir **Polimorfismo** com classes e métodos abstratos, e finaliza com uma aplicação prática que utiliza o Java Collections Framework para gerenciar diferentes tipos de objetos de forma unificada.
 
-### `Polimorfismo.java`
-
-Aprofundando nos conceitos de **POO**, este código é um exemplo prático de **Polimorfismo**. Ele evolui o exemplo anterior ao transformar `Funcionario` em uma **classe abstrata** (`abstract class`) com um **método abstrato** (`abstract double calcularSalario()`). As subclasses `Gerente` e `Programador` são, então, obrigadas a **sobrescrever** (`@Override`) este método, cada uma com sua própria lógica de cálculo. O polimorfismo é demonstrado no método estático `imprimirSalario`, que aceita um objeto do tipo genérico `Funcionario` e invoca o método `calcularSalario()` correto em tempo de execução, dependendo se o objeto real é um `Gerente` ou um `Programador`.
+* **`Herancas.java`**: Versão inicial que introduz o pilar da **Herança**. Cria uma classe base `Funcionario` e uma subclasse `Gerente` que herda seus atributos e métodos, utilizando as palavras-chave `extends` e `super()`.
+* **`Polimorfismo.java`**: Introduz o **Polimorfismo** ao transformar a superclasse `Funcionario` em uma **classe abstrata** (`abstract class`) com um **método abstrato**. Isso força as subclasses a **sobrescreverem** (`@Override`) o método, permitindo que objetos de tipos diferentes respondam à mesma chamada.
+* **`SistemadeFuncionarios.java`**: Demonstra uma aplicação prática do polimorfismo utilizando o Java Collections Framework. Vários objetos de subclasses diferentes (`Gerente`, `Programador`) são armazenados em uma única **`ArrayList<Funcionario>`** e processados de forma uniforme através de um laço de repetição.
 
