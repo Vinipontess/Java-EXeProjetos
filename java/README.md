@@ -20,3 +20,7 @@ Este grupo de exercícios demonstra a evolução do desenvolvimento de um sistem
 * **`CaixaEletronicoPOO.java`**: Introduz o conceito de **classe**, separando a lógica da conta bancária (`saldo`, `depositar`, `sacar`) em seu próprio objeto.
 * **`ContaBancariaConstrutores.java`**: Adiciona o uso de **construtores** para garantir que as novas instâncias de `ContaBancaria` sejam inicializadas com dados essenciais, como número da conta e titular, de forma segura.
 * **`ContaBancariaGettersSetters.java`**: Por fim, implementa o conceito de **Encapsulamento** com o uso de **`getters` e `setters`**, tornando as variáveis privadas (`private`) e controlando o acesso a elas.
+
+### `Herancas.java`
+
+Este exercício demonstra um dos pilares da **Programação Orientada a Objetos (POO)**: a **Herança**. Ele define uma classe base (`Funcionario`) com atributos e métodos comuns e, em seguida, uma subclasse (`Gerente`) que **estende** (`extends`) `Funcionario`, herdando suas características e adicionando novos atributos e comportamentos específicos. O código destaca o uso da palavra-chave `super()` no construtor da subclasse para chamar o construtor da classe pai, garantindo a inicialização correta dos atributos herdados.
