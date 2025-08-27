@@ -36,3 +36,10 @@ Este exercício foca no **Tratamento de Exceções** (`Exception Handling`), um 
 ### `ArrayListTarefas.java`
 
 Este exercício prático foca na utilização do **`ArrayList`**, uma implementação fundamental do **Java Collections Framework**. O código simula uma lista de tarefas e demonstra as operações mais comuns: adicionar elementos com `add()`, obter o total de itens com `size()`, acessar um elemento específico pelo índice com `get()` e remover um item com `remove()`. Para finalizar, o programa percorre e exibe a lista atualizada utilizando um laço **`for-each`**.
+
+### `HashSeteHashMap.java`
+
+Este arquivo demonstra o uso de duas outras estruturas importantes do **Java Collections Framework**: o **`HashSet`** e o **`HashMap`**.
+* **`HashSet`**: A primeira parte do código utiliza um `HashSet` para armazenar uma lista de e-mails, provando sua principal característica: a **não permissão de elementos duplicados**. Mesmo que um e-mail seja adicionado duas vezes, ele aparecerá na lista apenas uma vez.
+* **`HashMap`**: A segunda parte apresenta o `HashMap` para criar um catálogo de produtos, onde cada item (a **chave** `String`) está associado a um preço (o **valor** `Double`). Demonstra operações essenciais como a inserção de dados com `put()`, a busca de um valor pela chave com `get()`, e a iteração sobre todos os registros .
+* 
