@@ -29,3 +29,7 @@ Este conjunto de exercícios demonstra a aplicação progressiva de conceitos-ch
 * **`Polimorfismo.java`**: Introduz o **Polimorfismo** ao transformar a superclasse `Funcionario` em uma **classe abstrata** (`abstract class`) com um **método abstrato**. Isso força as subclasses a **sobrescreverem** (`@Override`) o método, permitindo que objetos de tipos diferentes respondam à mesma chamada.
 * **`SistemadeFuncionarios.java`**: Demonstra uma aplicação prática do polimorfismo utilizando o Java Collections Framework. Vários objetos de subclasses diferentes (`Gerente`, `Programador`) são armazenados em uma única **`ArrayList<Funcionario>`** e processados de forma uniforme através de um laço de repetição.
 
+### `TryCatchIdade.java`
+
+Este exercício foca no **Tratamento de Exceções** (`Exception Handling`), um conceito crucial para criar programas robustos. Ele utiliza um bloco **`try-catch`** para lidar com possíveis erros na entrada de dados do usuário. O programa solicita a idade e, caso a entrada não seja um número inteiro, a exceção **`InputMismatchException`** é capturada. Em vez de quebrar o programa, o bloco `catch` exibe uma mensagem de erro amigável e permite que o usuário tente novamente, garantindo a **validação da entrada**.
+
