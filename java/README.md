@@ -33,3 +33,6 @@ Este conjunto de exercícios demonstra a aplicação progressiva de conceitos-ch
 
 Este exercício foca no **Tratamento de Exceções** (`Exception Handling`), um conceito crucial para criar programas robustos. Ele utiliza um bloco **`try-catch`** para lidar com possíveis erros na entrada de dados do usuário. O programa solicita a idade e, caso a entrada não seja um número inteiro, a exceção **`InputMismatchException`** é capturada. Em vez de quebrar o programa, o bloco `catch` exibe uma mensagem de erro amigável e permite que o usuário tente novamente, garantindo a **validação da entrada**.
 
+### `ArrayListTarefas.java`
+
+Este exercício prático foca na utilização do **`ArrayList`**, uma implementação fundamental do **Java Collections Framework**. O código simula uma lista de tarefas e demonstra as operações mais comuns: adicionar elementos com `add()`, obter o total de itens com `size()`, acessar um elemento específico pelo índice com `get()` e remover um item com `remove()`. Para finalizar, o programa percorre e exibe a lista atualizada utilizando um laço **`for-each`**.
