@@ -43,3 +43,12 @@ Este arquivo demonstra o uso de duas outras estruturas importantes do **Java Col
 * **`HashSet`**: A primeira parte do código utiliza um `HashSet` para armazenar uma lista de e-mails, provando sua principal característica: a **não permissão de elementos duplicados**. Mesmo que um e-mail seja adicionado duas vezes, ele aparecerá na lista apenas uma vez.
 * **`HashMap`**: A segunda parte apresenta o `HashMap` para criar um catálogo de produtos, onde cada item (a **chave** `String`) está associado a um preço (o **valor** `Double`). Demonstra operações essenciais como a inserção de dados com `put()`, a busca de um valor pela chave com `get()`, e a iteração sobre todos os registros .
   
+### `ManipulacaodeArquivos.java`
+
+Este código introduz a **manipulação de arquivos** em Java utilizando a API mais moderna **Java NIO** (`New I/O`). Ele cobre as duas operações fundamentais:
+
+1.  **Escrita**: O programa primeiro cria uma `List<String>` com dados de log e utiliza o método `Files.write()` para salvar essa lista em um arquivo de texto chamado `logs.txt`.
+
+2.  **Leitura**: Em seguida, ele lê o conteúdo do arquivo recém-criado de volta para a memória com o método `Files.readAllLines()`, exibindo cada linha no console.
+
+Ambas as operações são realizadas dentro de blocos **`try-catch`** para o tratamento obrigatório da exceção `IOException`, garantindo que o programa lide com possíveis erros de entrada e saída (I/O).
