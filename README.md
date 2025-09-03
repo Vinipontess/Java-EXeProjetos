@@ -17,3 +17,13 @@ Este é um projeto mais completo que demonstra a **leitura e interpretação (pa
 * **Parsing de Dados**: Para cada linha lida, aplica o método `String.split(",")` para separar os campos. Em seguida, converte os dados de `String` para seus tipos corretos com `Double.parseDouble()` e `Integer.parseInt()`.
 * **Orientação a Objetos**: Os dados de cada produto são armazenados em uma instância da classe `Produto`, que serve como um **modelo de dados (POJO)**.
 * **Menu Interativo**: Um laço `while` com uma estrutura `switch` cria um menu que permite ao usuário **listar todos os produtos** ou **buscar por um produto específico** pelo nome.
+
+### CatalogoCSV-TesteJUNIT
+
+Este projeto evolui a lógica do `CatalogoSimplescomCSVa`, reestruturando-o em um formato **Maven** com o objetivo principal de adicionar **Testes Unitários** para a classe de modelo `Produto`. 
+
+O arquivo `ProdutoTest.java` utiliza o framework **JUnit 4** para verificar o comportamento da classe `Produto`, garantindo que ela armazene e manipule os dados corretamente. Os testes cobrem três cenários principais:
+
+* **Teste de Construtor**: Valida se um objeto `Produto` é criado e inicializado corretamente.
+* **Teste de Setters**: Garante que os métodos `set` (`setNome`, `setPreco`, etc.) alteram o estado do objeto como esperado.
+* **Teste de Lógica**: Simula um cálculo (valor total do estoque) para confirmar que os dados no objeto podem ser usados para operações de negócio corretas.
