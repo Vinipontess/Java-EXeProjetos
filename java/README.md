@@ -62,3 +62,15 @@ Este é um pequeno projeto estruturado com **Maven** que introduz o conceito de 
 * **Padrão AAA**: Os testes seguem o padrão **Arrange-Act-Assert** (Preparar, Agir, Verificar) e utilizam asserções como `assertTrue` e `assertFalse` para validar se os resultados estão corretos para diferentes entradas (CPFs válidos, inválidos e nulos).
 
 O objetivo é demonstrar como garantir a qualidade e o comportamento esperado do código de forma automatizada.
+
+### `AprendendoStream.java`
+
+Este código introduz a **Stream API**, que oferece uma abordagem de **programação funcional** para processar coleções de dados de forma declarativa e eficiente.
+
+O exemplo cria um *pipeline* de operações sobre uma lista de números para:
+
+1.  **Filtrar** (`filter`): Selecionar apenas os números pares da lista original.
+2.  **Mapear/Transformar** (`map`): Multiplicar cada número par resultante por 10.
+3.  **Coletar** (`collect`): Reunir os resultados finais em uma nova lista.
+
+Todo o processo é realizado de forma concisa utilizando **expressões lambda** (ex: `n -> n % 2 == 0`), que são uma característica central da programação funcional em Java.
