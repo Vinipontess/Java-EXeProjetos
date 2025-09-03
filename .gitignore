@@ -1,0 +1,11 @@
+# Arquivos compilados do Maven
+/target/
+
+# Arquivos de log
+*.log
+*.log.*
+
+# Arquivos de IDE
+.idea/
+.vscode/
+*.iml
