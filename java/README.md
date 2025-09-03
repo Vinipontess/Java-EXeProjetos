@@ -52,3 +52,13 @@ Este código introduz a **manipulação de arquivos** em Java utilizando a API m
 2.  **Leitura**: Em seguida, ele lê o conteúdo do arquivo recém-criado de volta para a memória com o método `Files.readAllLines()`, exibindo cada linha no console.
 
 Ambas as operações são realizadas dentro de blocos **`try-catch`** para o tratamento obrigatório da exceção `IOException`, garantindo que o programa lide com possíveis erros de entrada e saída (I/O).
+
+### Projeto: Validação de CPF com Testes Unitários
+
+Este é um pequeno projeto estruturado com **Maven** que introduz o conceito de **Testes Unitários** em Java, utilizando o framework **JUnit 5**. 🧪
+
+* **`validacaoCPF.java`**: Contém a lógica de negócio a ser testada — uma validação simples que verifica se uma `String` de CPF não é nula e possui 11 caracteres.
+* **`validacaoCPFTest.java`**: É a classe de testes, responsável por verificar o comportamento da classe `ValidacaoCPF`. Cada método anotado com `@Test` representa um cenário de teste específico.
+* **Padrão AAA**: Os testes seguem o padrão **Arrange-Act-Assert** (Preparar, Agir, Verificar) e utilizam asserções como `assertTrue` e `assertFalse` para validar se os resultados estão corretos para diferentes entradas (CPFs válidos, inválidos e nulos).
+
+O objetivo é demonstrar como garantir a qualidade e o comportamento esperado do código de forma automatizada.
