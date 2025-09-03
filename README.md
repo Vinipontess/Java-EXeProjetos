@@ -18,7 +18,7 @@ Este é um projeto mais completo que demonstra a **leitura e interpretação (pa
 * **Orientação a Objetos**: Os dados de cada produto são armazenados em uma instância da classe `Produto`, que serve como um **modelo de dados (POJO)**.
 * **Menu Interativo**: Um laço `while` com uma estrutura `switch` cria um menu que permite ao usuário **listar todos os produtos** ou **buscar por um produto específico** pelo nome.
 
-### CatalogoCSV-TesteJUNIT
+### `CatalogoCSV-TesteJUNIT`
 
 Este projeto evolui a lógica do `CatalogoSimplescomCSVa`, reestruturando-o em um formato **Maven** com o objetivo principal de adicionar **Testes Unitários** para a classe de modelo `Produto`. 
 
