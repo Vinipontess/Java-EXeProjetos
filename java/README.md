@@ -75,7 +75,7 @@ O exemplo cria um *pipeline* de operações sobre uma lista de números para:
 
 Todo o processo é realizado de forma concisa utilizando **expressões lambda** (ex: `n -> n % 2 == 0`), que são uma característica central da programação funcional em Java.
 
-### API de Status com Spring Boot
+### API de Status com Spring Boot - `StatusAPI`
 
 Este é um projeto introdutório ao **Spring Boot**, um dos frameworks mais populares para a criação de **APIs REST** em Java. Ele funciona como um "Hello, World!" para aplicações web.
 
@@ -84,3 +84,14 @@ Este é um projeto introdutório ao **Spring Boot**, um dos frameworks mais popu
 * **Endpoint `/status`**: Utilizando a anotação `@GetMapping`, este método expõe a rota `/status`. Quando um cliente faz uma requisição HTTP GET para essa rota, o método retorna uma `String` simples confirmando que a API está online, junto com a data e a hora atuais.
 
 O objetivo é demonstrar a estrutura mínima e a simplicidade para colocar uma aplicação web funcional no ar usando o Spring Boot.
+
+### API REST com Spring Boot, JPA e Banco H2 - `JPAeH2`
+
+Este projeto evolui a API REST anterior adicionando uma camada de **persistência de dados** com **Spring Data JPA** e um banco de dados em memória **H2**. 🗄️
+
+* **Entidade JPA (`Usuario.java`)**: A classe `Usuario` é anotada com `@Entity`, transformando-a em uma representação de uma tabela no banco de dados. Isso é a base do **ORM (Mapeamento Objeto-Relacional)**, permitindo trabalhar com objetos Java em vez de SQL puro.
+* **Repositório (`UsuarioRepository.java`)**: A interface estende `JpaRepository`. Apenas com isso, o **Spring Data JPA** cria dinamicamente uma implementação com todos os métodos básicos de um **CRUD** (Criar, Ler, Atualizar, Apagar), como `save()` e `findAll()`.
+* **Controller (`UsuarioController.java`)**: O controller agora recebe o repositório via **injeção de dependência** (`@Autowired`) e o utiliza para manipular os dados no banco.
+* **Banco de Dados H2**: O projeto usa o **H2**, um **banco de dados em memória** que é configurado automaticamente pelo Spring Boot, sendo ideal para desenvolvimento e testes rápidos.
+
+Como resultado, a API agora possui endpoints em `/usuarios` que permitem **criar (`@PostMapping`)** e **listar (`@GetMapping`)** usuários, com os dados sendo efetivamente salvos e recuperados de um banco de dados.
