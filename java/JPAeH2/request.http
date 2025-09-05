@@ -1,0 +1,33 @@
+### Criar um novo usuário
+POST http://localhost:8080/usuarios
+Content-Type: application/json
+
+{
+    "nome": "Vinicius Arquiteto",
+    "email": "vinicius.dev@email.com"
+}
+
+POST http://localhost:8080/usuarios
+Content-Type: application/json
+{
+    "nome": "Lucas Lopes",
+    "email": "Lucas.dev@email.com"
+}
+
+POST http://localhost:8080/usuarios
+Content-Type: application/json
+
+{
+    "nome": "Cesar Beda",
+    "email": "Cesar.dev@email.com"
+}
+
+POST http://localhost:8080/usuarios
+Content-Type: application/json
+{
+    "nome": "Edu Arquiteto",
+    "email": "Eduardo.dev@email.com"
+}
+
+### Listar todos os usuários
+GET http://localhost:8080/usuarios
