@@ -74,3 +74,13 @@ O exemplo cria um *pipeline* de operações sobre uma lista de números para:
 3.  **Coletar** (`collect`): Reunir os resultados finais em uma nova lista.
 
 Todo o processo é realizado de forma concisa utilizando **expressões lambda** (ex: `n -> n % 2 == 0`), que são uma característica central da programação funcional em Java.
+
+### API de Status com Spring Boot
+
+Este é um projeto introdutório ao **Spring Boot**, um dos frameworks mais populares para a criação de **APIs REST** em Java. Ele funciona como um "Hello, World!" para aplicações web.
+
+* **`StatusApiApplication.java`**: É a classe principal, anotada com `@SpringBootApplication`, que serve como ponto de entrada para iniciar o servidor web embutido (geralmente o Tomcat) e toda a aplicação.
+* **`StatusController.java`**: É um **Controller REST** (anotado com `@RestController`) que define os *endpoints* da API.
+* **Endpoint `/status`**: Utilizando a anotação `@GetMapping`, este método expõe a rota `/status`. Quando um cliente faz uma requisição HTTP GET para essa rota, o método retorna uma `String` simples confirmando que a API está online, junto com a data e a hora atuais.
+
+O objetivo é demonstrar a estrutura mínima e a simplicidade para colocar uma aplicação web funcional no ar usando o Spring Boot.
