@@ -19,3 +19,21 @@ O arquivo `ProdutoTest.java` utiliza o framework **JUnit 4** para verificar o co
 * **Teste de Construtor**: Valida se um objeto `Produto` é criado e inicializado corretamente.
 * **Teste de Setters**: Garante que os métodos `set` (`setNome`, `setPreco`, etc.) alteram o estado do objeto como esperado.
 * **Teste de Lógica**: Simula um cálculo (valor total do estoque) para confirmar que os dados no objeto podem ser usados para operações de negócio corretas.
+
+### API RESTful Completa: Catálogo de Livros
+
+Este projeto implementa uma **API RESTful** completa para um **Catálogo de Livros**, utilizando **Spring Boot** e **Spring Data JPA**. É uma demonstração prática de todas as operações **CRUD** (Create, Read, Update, Delete). 📚
+
+A API expõe os seguintes *endpoints* na rota base `/livros`:
+
+* **`POST /livros`**: Adiciona um novo livro ao catálogo.
+* **`GET /livros`**: Lista todos os livros existentes.
+* **`GET /livros/{id}`**: Busca um único livro pelo seu ID.
+* **`PUT /livros/{id}`**: Atualiza as informações de um livro existente.
+* **`DELETE /livros/{id}`**: Remove um livro do catálogo.
+
+Pontos-chave demonstrados:
+* **Mapeamento HTTP Completo**: Uso das anotações `@PostMapping`, `@GetMapping`, `@PutMapping` e `@DeleteMapping` para cada operação CRUD.
+* **Variáveis de Caminho**: Utilização de `@PathVariable` para capturar o `id` da URL e operar em um recurso específico.
+* **Validação no Modelo**: A entidade `Livro` possui validações simples em seus métodos `set` para garantir a integridade dos dados.
+* **Tratamento de Erros**: O código introduz o tratamento para casos de "não encontrado" usando `.orElseThrow()`, uma prática comum ao buscar por um recurso que pode não existir.
