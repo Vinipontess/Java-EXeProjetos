@@ -1,3 +1,5 @@
+package com.livroseatores.LivroseAutores;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -7,12 +9,12 @@ import jakarta.persistence.Id;
 @Entity
 public class Autor{
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY);
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
 
     //Construtor vazio por conta do JPA
-    public class Autor() {
+    public Autor() {
     }
     
     //Getters

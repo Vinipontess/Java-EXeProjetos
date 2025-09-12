@@ -1,21 +1,26 @@
+package com.livroseatores.LivroseAutores;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 
 
 @Entity
 public class Livro{
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY);
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String titulo;
     private int anoDePublicacao;
 
     @ManyToOne
-    @JoinColumn(name = "autor_id");
+    @JoinColumn(name = "autor_id")
     private Autor autor;
 
     //Construtor vazio por conta do JPA
-    public class Livro() {
+    public Livro() {
     }
 
     //Getters

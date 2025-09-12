@@ -1,7 +1,8 @@
 package com.livroseatores.LivroseAutores;
+
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.beans.factory.annotation.AutoWired;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -19,8 +20,8 @@ import java.util.List;
 public class LivroController{
     private final LivroRepository livroRepository;
 
-    @AutoWired
-    public class LivroController(LivroRepository livroRepository){
+    @Autowired
+    public  LivroController(LivroRepository livroRepository){
         this.livroRepository = livroRepository;
     }
 
@@ -29,9 +30,9 @@ public class LivroController{
         return livroRepository.findAll();
     }
 
-    @Getmapping("{id}")
-    public Livro getLivroById(PathVariable long id){
-        return livroRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Livro não encontrado com id: " + id));
+    @GetMapping("{id}")
+    public Livro getLivroById(@PathVariable long id){
+        return livroRepository.findById(id).orElseThrow();
     }
 
     @PostMapping
@@ -42,7 +43,7 @@ public class LivroController{
 
     @PutMapping("{id}")
     public Livro updateLivro(@PathVariable long id, @RequestBody Livro alteracaoLivro){
-        Livro livroExistente = LivroRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Livro não encontrado com id: " + id));
+        Livro livroExistente = livroRepository.findById(id).orElseThrow();
         livroExistente.setTitulo(alteracaoLivro.getTitulo());
         livroExistente.setAutor(alteracaoLivro.getAutor());
         livroExistente.setAnoDePublicacao(alteracaoLivro.getAnoDePublicacao());
@@ -52,7 +53,7 @@ public class LivroController{
 
     @DeleteMapping("{id}")
     public ResponseEntity<void> deleteLivro(@PathVariable long id){
-        Livro livroExistente = livroRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("Livro não encontrado com id: " + id));
+        Livro livroExistente = livroRepository.findById(id).orElseThrow();
         livroRepository.delete(livroExistente);
         return ResponseEntity.noContent().build();
     }
