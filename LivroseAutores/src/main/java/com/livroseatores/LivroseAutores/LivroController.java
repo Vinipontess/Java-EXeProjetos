@@ -52,7 +52,7 @@ public class LivroController{
     }
 
     @DeleteMapping("{id}")
-    public ResponseEntity<void> deleteLivro(@PathVariable long id){
+    public ResponseEntity<Void> deleteLivro(@PathVariable long id){
         Livro livroExistente = livroRepository.findById(id).orElseThrow();
         livroRepository.delete(livroExistente);
         return ResponseEntity.noContent().build();
