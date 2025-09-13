@@ -38,7 +38,7 @@ Pontos-chave demonstrados:
 * **Validação no Modelo**: A entidade `Livro` possui validações simples em seus métodos `set` para garantir a integridade dos dados.
 * **Tratamento de Erros**: O código introduz o tratamento para casos de "não encontrado" usando `.orElseThrow()`, uma prática comum ao buscar por um recurso que pode não existir.
 
-### API com Relacionamento, Docker, Flyway e PostgreSQL
+### API com Relacionamento, Docker, Flyway e PostgreSQL: `LivroseAutores`
 
 Este projeto representa um salto significativo em complexidade e boas práticas, construindo uma API REST com um ecossistema de produção mais realista, que inclui:
 
