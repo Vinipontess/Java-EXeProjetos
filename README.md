@@ -37,3 +37,14 @@ Pontos-chave demonstrados:
 * **Variáveis de Caminho**: Utilização de `@PathVariable` para capturar o `id` da URL e operar em um recurso específico.
 * **Validação no Modelo**: A entidade `Livro` possui validações simples em seus métodos `set` para garantir a integridade dos dados.
 * **Tratamento de Erros**: O código introduz o tratamento para casos de "não encontrado" usando `.orElseThrow()`, uma prática comum ao buscar por um recurso que pode não existir.
+
+### API com Relacionamento, Docker, Flyway e PostgreSQL
+
+Este projeto representa um salto significativo em complexidade e boas práticas, construindo uma API REST com um ecossistema de produção mais realista, que inclui:
+
+* **Relacionamento de Entidades (JPA)**: Modela o relacionamento `OneToMany` / `@ManyToOne` entre as entidades **Autor** e **Livro** usando **Spring Data JPA**.
+* **Banco de Dados PostgreSQL**: Abandona o banco em memória H2 em favor do **PostgreSQL**, um sistema de gerenciamento de banco de dados relacional robusto e amplamente utilizado em produção. 🐘
+* **Containerização com Docker**: Utiliza **Docker** e um arquivo `docker-compose.yml` para **containerizar** a aplicação e o banco de dados. Isso garante um ambiente de desenvolvimento consistente, isolado e facilmente replicável com um único comando. 🐳
+* **Migrações com Flyway**: Introduz o **Flyway** para gerenciamento de **migrações de banco de dados**. Os scripts SQL na pasta `resources/db/migration` definem a estrutura das tabelas, permitindo que o esquema do banco evolua de forma versionada e automática junto com o código.
+* **Arquitetura em Camadas**: Consolida a arquitetura em camadas (Controller, Service, Repository), separando as responsabilidades e tornando o código mais organizado e manutenível.
+* 
